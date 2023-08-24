@@ -70,7 +70,7 @@ function App() {
         <>
           <OmedetouText>정말 축하해! {name}!</OmedetouText>
           <Video autoPlay loop>
-            <source src='/omedetou.mp4' type='video/mp4'></source>
+            <source src='./omedetou.mp4' type='video/mp4'></source>
           </Video>
         </>
       ) : (
