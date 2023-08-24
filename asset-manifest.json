@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/omedetou/static/css/main.90f6920e.css",
+    "main.js": "/omedetou/static/js/main.5d0afeb9.js",
+    "index.html": "/omedetou/index.html",
+    "main.90f6920e.css.map": "/omedetou/static/css/main.90f6920e.css.map",
+    "main.5d0afeb9.js.map": "/omedetou/static/js/main.5d0afeb9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90f6920e.css",
+    "static/js/main.5d0afeb9.js"
+  ]
+}
