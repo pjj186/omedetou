@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -55,6 +55,7 @@ const OKButton = styled.button`
 function App() {
   const [name, setName] = useState<string | null>(null);
   const [confirm, setConfirm] = useState<boolean>(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value);
@@ -64,12 +65,18 @@ function App() {
     setConfirm(true);
   };
 
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.volume = 0.5; // 원하는 볼륨 레벨로 변경할 수 있습니다.
+    }
+  }, []);
+
   return (
     <Container>
       {confirm ? (
         <>
           <OmedetouText>정말 축하해! {name}!</OmedetouText>
-          <Video autoPlay loop>
+          <Video autoPlay loop ref={videoRef}>
             <source src='./omedetou.mp4' type='video/mp4'></source>
           </Video>
         </>
