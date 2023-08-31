@@ -67,7 +67,7 @@ function App() {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.volume = 0.3; // 원하는 볼륨 레벨로 변경할 수 있습니다.
+      videoRef.current.volume = 0.2; // 원하는 볼륨 레벨로 변경할 수 있습니다.
     }
   }, []);
 
@@ -77,7 +77,7 @@ function App() {
         <>
           <OmedetouText>정말 축하해! {name}!</OmedetouText>
           <Video autoPlay loop ref={videoRef}>
-            <source src='./omedetou.mp4' type='video/mp4'></source>
+            <source src={require('./omedetou.mp4')} type='video/mp4'></source>
           </Video>
         </>
       ) : (
