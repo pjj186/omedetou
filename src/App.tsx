@@ -67,7 +67,7 @@ function App() {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.volume = 0.5; // 원하는 볼륨 레벨로 변경할 수 있습니다.
+      videoRef.current.volume = 0.3; // 원하는 볼륨 레벨로 변경할 수 있습니다.
     }
   }, []);
 
