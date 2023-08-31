@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/omedetou/static/css/main.90f6920e.css",
-    "main.js": "/omedetou/static/js/main.31bd943b.js",
+    "main.js": "/omedetou/static/js/main.24977a4e.js",
     "index.html": "/omedetou/index.html",
     "main.90f6920e.css.map": "/omedetou/static/css/main.90f6920e.css.map",
-    "main.31bd943b.js.map": "/omedetou/static/js/main.31bd943b.js.map"
+    "main.24977a4e.js.map": "/omedetou/static/js/main.24977a4e.js.map"
   },
   "entrypoints": [
     "static/css/main.90f6920e.css",
-    "static/js/main.31bd943b.js"
+    "static/js/main.24977a4e.js"
   ]
 }
