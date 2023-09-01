@@ -10,4 +10,4 @@ https://pjj186.github.io/omedetou/
 
 
 
-+ [minsoo-web](https://github.com/minsoo-web)님께서 사용성 개선에 기여해주셨습니다!
++ [minsoo-web](https://github.com/minsoo-web)님께서 사용성 개선에 기여해주셨습니다! (MUTE 기능, 스크롤 개선)
