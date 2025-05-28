@@ -13,7 +13,7 @@ export const Omedetou = ({ name }: { name: string }) => {
     <Container>
       <Confetti width={windowSize.width} height={windowSize.height} />
 
-      <MuteButton onClick={() => setMuted(muteState => !muteState)}>
+      <MuteButton onClick={() => setMuted((muteState) => !muteState)}>
         <i className={`xi-volume-${muted ? "off" : "up"}`}></i>
       </MuteButton>
 
@@ -47,10 +47,24 @@ const OmedetouText = styled.span`
   bottom: 4rem;
   left: 50%;
   transform: translateX(-50%);
+  text-align: center;
+  word-break: keep-all;
 
   color: white;
   font-size: 5rem;
   text-shadow: 2px 2px 2px black;
+
+  @media screen and (max-width: 768px) {
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 320px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Video = styled.video`
