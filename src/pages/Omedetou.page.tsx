@@ -19,7 +19,7 @@ export const Omedetou = ({ name }: { name: string }) => {
 
       <OmedetouText>정말 축하해! {name}!</OmedetouText>
 
-      <Video ref={videoRef} loop muted={muted}>
+      <Video ref={videoRef} loop autoPlay playsInline muted={muted}>
         <source src={mp4} type="video/mp4"></source>
       </Video>
     </Container>
@@ -35,10 +35,18 @@ const Container = styled.section`
 const MuteButton = styled.button`
   position: absolute;
   z-index: 1;
-  left: 5px;
-  top: 5px;
+  left: 12px;
+  top: 12px;
 
-  font-size: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  font-size: 24px;
   color: white;
 `;
 
